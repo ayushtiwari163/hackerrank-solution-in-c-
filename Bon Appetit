@@ -1,0 +1,24 @@
+# hackerrank-solution-in-c-
+Algorithm Problem
+#include<iostream>
+using namespace std;
+
+int main()
+{long long int sum=0,i;int z,n,k,bill[100000];
+cin>>n>>k;
+for(i=0;i<n;i++)
+{
+    cin>>bill[i];
+}
+cin>>z;
+for(i=0;i<n;i++)
+{
+sum=sum+bill[i];
+}
+int p=sum-bill[k];
+int r=z-(p/2);
+if(r==0)
+cout<<"Bon Appetit";
+else
+cout<<r;
+}

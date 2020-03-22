@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+int n,i,max,min,c=0,d=0;
+long int score[1000];
+cin>>n;
+for(i=0;i<n;i++)
+{
+    cin>>score[i];
+}
+max=score[0];
+min=score[0];
+for(i=0;i<n;i++)
+{
+    if(max<score[i])
+    {
+        c++;
+        max=score[i];
+    }
+    if(min>score[i])
+    {
+        d++;
+        min=score[i];
+    }
+}
+cout<<c<<" "<<d;
+}
+

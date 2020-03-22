@@ -1,0 +1,36 @@
+# hackerrank-solution-in-c-
+Algorithm Problem
+#include <iostream>
+using namespace std;
+int main()
+{
+int i,p,max,c=0,d=0,e=0,f=0,g=0;
+long int n;
+long int arr[200000];
+cin>>n;
+for(i=0;i<n;i++)
+{
+    cin>>arr[i];
+    if(arr[i]==1)
+    c++;
+    if(arr[i]==2)
+    d++;
+    if(arr[i]==3)
+    e++;
+    if(arr[i]==4)
+    f++;
+    if(arr[i]==5)
+    g++;
+}
+int b[]={c,d,e,f,g};
+max=c;p=0;
+for(i=0;i<5;i++)
+{
+    if(max<b[i])
+    {
+    max=b[i];
+    p=i;
+    }
+}
+cout<<p+1;
+}
